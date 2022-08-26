@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="109dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:onClick="signUpClicked"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter E-Mail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="109dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:onClick="signInClicked"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="@+id/passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+</androidx.constraintlayout.widget.ConstraintLayout>
